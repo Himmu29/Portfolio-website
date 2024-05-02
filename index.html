@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 65);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: grey;
+            font-size: 1.03rem;
+        }
+
+        main hr {
+            border: 0;
+            background: violet;
+            height: 1px;
+            margin: 60px 30px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 123px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .btn {
+            border: rgb(53, 53, 53) 0.1 rem solid;
+            padding: 12px;
+            background-color: #292979;
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftsection .btn:hover {
+            border: rgb(53, 53, 53) 0.1rem solid;
+        }
+
+        .rightsection {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 86vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 160px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 60px;
+            width: 153px;
+
+        }
+
+        .vertical-desc {
+
+            position: relative;
+            top: 72px;
+            color: grey;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .about-image {
+            width: 50%;
+            /* Adjust width as needed */
+            order: 1;
+            /* Change the order to make it appear second */
+            text-align: center;
+            /* Center the image */
+            margin-left: auto;
+            /* Align the image to the right */
+            position: relative;
+            bottom: 140px;
+        }
+        .about-content h2{
+            font-size: 2rem;
+            position: relative;
+            left: 450px;
+        }
+        .about-content p{
+            margin-right: auto;
+            order: 2;
+            width: 50%;
+            position: relative;
+            left: 50px;
+            font-size: 1rem;
+        }
+        .about-image img:hover{
+            transform: scale(1.1);
+        }
+
+        /*footer{
+            background-color: #151530;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: grey;
+            padding: 12px 12px;
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Himanshu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My Name is
+                <span class="purple">Himanshu Gupta</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github</button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="Untitled_design-removebg-preview-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+
+            <h1>SKILLS</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="ISO_C++_Logo.svg" alt="">
+                    <div class="vertical-title">
+                        C,C++
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolor asperiores sunt amet
+                        natus ex. Officiis et quis deleniti obcaecati?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="HTML5_logo_and_wordmark.svg" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolor asperiores sunt amet
+                        natus ex. Officiis et quis deleniti obcaecati?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="CSS3_logo_and_wordmark.svg" alt="">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolor asperiores sunt amet
+                        natus ex. Officiis et quis deleniti obcaecati?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="JavaScript_logo_PNG_(1).png" alt="">
+                    <div class="vertical-title">
+                        JAVASCRIPT
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolor asperiores sunt amet
+                        natus ex. Officiis et quis deleniti obcaecati?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="ISO_C++_Logo.svg" alt="">
+                    <div class="vertical-title">
+                        FILMORA
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dolor asperiores sunt amet
+                        natus ex. Officiis et quis deleniti obcaecati?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <br>
+            <p>I'm Himanshu Gupta, a passionate web developer and video editor based in [Your Location]. I love building
+                things for the web and creating engaging content. With a strong background in [Your field of expertise],
+                I enjoy tackling new challenges and learning new technologies.</p>
+            <div class="about-image">
+                <img src="bg.png-removebg-preview.png" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <!---- <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Himanshu's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth"> 
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">www.himanshuportfolio.com | All rights reserved</div>
+    </footer> -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Learner'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
